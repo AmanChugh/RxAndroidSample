@@ -13,10 +13,6 @@ import retrofit2.http.POST;
 
 public interface ApiInterface {
 
-
     @POST("Login")
     Observable<String> getLoginData(@Body HashMap<String, String> requestData);
-
-    @POST("HomeApiN")
-    Observable<String> getHomeData(@Body HashMap<String, String> requestData);
 }
